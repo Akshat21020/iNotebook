@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router'
 function Login(props) {
    const host = "http://localhost:5000"
     const [credentials, setCredentials] = useState({email : "" , password : ""})
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     //API call for user login
     const handleSubmit = async (e) =>{

@@ -1,10 +1,17 @@
-import React, { useContext,useState } from 'react'
+import React, { useContext,useEffect,useState } from 'react'
 import noteContext from '../context/notes/noteContext'
+import { useNavigate } from 'react-router'
 
 export default function AddNote(props) {
   const context = useContext(noteContext);
   const {addNote} = context;
-
+  const navigate = useNavigate();
+  useEffect(() =>{
+    if(!localStorage.getItem('token')){
+      navigate('/login');
+    }
+    // eslint-disable-next-line
+  },[])
     const [note , setNotes] = useState({title : "", description : "" });
 
   const handleOnClick = (e) =>{

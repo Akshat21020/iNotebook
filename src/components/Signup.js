@@ -47,7 +47,7 @@ function Signup(props) {
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-md-9 col-lg-6 col-xl-5">
           <h1>Welcome to iNotebook</h1>
-          <h6 className="my-2">iNotebook: Secure, cloud-powered, and free. Start capturing your ideas effortlessly today!</h6>
+          <h5>SignUp to have a private notebook on the cloud</h5>
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
               className="img-fluid" alt=''/>
           </div>

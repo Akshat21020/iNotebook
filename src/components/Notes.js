@@ -6,15 +6,15 @@ import Noteitem from "./Noteitem";
 const Notes = (props) => {
     const context = useContext(noteContext);
   const { notes,getNotes,editNote} = context;
-  let navigate = useNavigate;
+  const navigate = useNavigate()
 
   const [note , setNotes] = useState({id:"", etitle : "", edescription : ""});
   useEffect(() =>{
-    if(localStorage.getItem('token')){
-      getNotes();
+    if(!localStorage.getItem('token')){
+      navigate('/login');
     }
     else{
-      navigate('/login');
+      getNotes();
     }
     // eslint-disable-next-line
   },[])
@@ -65,7 +65,7 @@ const Notes = (props) => {
     </div>
   </div>
 </div>
-    <div className="container my-5">
+    <div className="container my-3">
       <h2>Your Notes</h2>
       <div className="row">
       {notes.map((note) =>{
