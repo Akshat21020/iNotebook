@@ -23,5 +23,3 @@ iNotebook is a secure and feature-rich web application that allows users to stor
 - Node.js & Express.js
 - MongoDB with Mongoose
 - JWT Authentication
-
-# Preview 🖼
