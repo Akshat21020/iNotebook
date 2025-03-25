@@ -14,7 +14,7 @@ iNotebook is a secure and feature-rich web application that allows users to stor
 - Click "Add Note" to create a new note.
 - Use the Edit/Delete options to modify your notes.
 
- ## Technologies Used 🏗️
+ ## Tech Stack 🛠️
 ### Frontend
 - React.js
 - Bootstrap / Tailwind CSS
